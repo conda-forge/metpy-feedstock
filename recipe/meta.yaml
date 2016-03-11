@@ -11,7 +11,7 @@ source:
 
 build:
     script: python setup.py install --single-version-externally-managed --record record.txt
-    number: 0
+    number: 1
 
 requirements:
   build:
@@ -23,7 +23,7 @@ requirements:
     - numpy >=1.8.0
     - scipy >=0.13.3
     - matplotlib >=1.4.0
-    - pint >=0.6
+    - pint ==0.6
     - enum34 # [py27]
 
 test:
