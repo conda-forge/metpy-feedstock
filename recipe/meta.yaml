@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/metpy/MetPy
-  license: BSD
+  license: BSD 3-Clause
   summary: 'MetPy is a collection of tools in Python for reading, visualizing and performing calculations with weather data.'
 
 extra:
