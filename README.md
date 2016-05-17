@@ -3,9 +3,9 @@ About metpy
 
 Home: https://github.com/metpy/MetPy
 
-Package license: BSD
+Package license: BSD 3-Clause
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: MetPy is a collection of tools in Python for reading, visualizing and performing calculations with weather data.
 
@@ -69,9 +69,15 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/metpy-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/metpy-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/metpy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/metpy-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/metpy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/metpy-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/metpy/badges/version.svg)](https://anaconda.org/conda-forge/metpy)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/metpy/badges/downloads.svg)](https://anaconda.org/conda-forge/metpy)
 
 
 Updating metpy-feedstock
