@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: metpy
@@ -7,7 +7,7 @@ package:
 source:
   fn: metpy-{{version}}.tar.gz
   url: https://pypi.io/packages/source/M/MetPy/MetPy-{{version}}.tar.gz
-  md5: 9284a5f33f28f7dc7c599d92f0d20373
+  sha256: f752ddd533e24e3de86f29c61c8d56035b6638e5a3d0c3c762378e147742ab20
 
 build:
     script: python setup.py install --single-version-externally-managed --record record.txt
@@ -20,10 +20,10 @@ requirements:
 
   run:
     - python
-    - numpy >=1.8.0
+    - numpy >=1.9.1
     - scipy >=0.13.3
     - matplotlib >=1.4.0
-    - pint >=0.6
+    - pint >=0.7
     - enum34  # [py27]
 
 test:
