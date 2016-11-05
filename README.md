@@ -1,7 +1,7 @@
 About metpy
 ===========
 
-Home: https://github.com/metpy/MetPy
+Home: https://github.com/Unidata/MetPy
 
 Package license: BSD 3-Clause
 
@@ -9,6 +9,16 @@ Feedstock license: BSD 3-Clause
 
 Summary: MetPy is a collection of tools in Python for reading, visualizing and performing calculations with weather data.
 
+The space MetPy aims for is GEMPAK (and maybe NCL)-like functionality,
+in a way that plugs easily into the existing scientific Python ecosystem
+(numpy, scipy, matplotlib). So, if you take the average GEMPAK script for
+a weather map, you need to: read data, calculate a derived field, and
+show on a map/skew-T. One of the benefits hoped to achieve over GEMPAK
+is to make it easier to use these routines for any meteorological Python
+application; this means making it easy to pull out the LCL calculation
+and just use that, or re-use the Skew-T with your own data code. MetPy
+also prides itself on being well-documented and well-tested, so that
+on-going maintenance is easily manageable.
 
 
 Installing metpy
