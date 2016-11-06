@@ -1,17 +1,19 @@
-{% set version = "0.4.0" %}
+{% set name = "MetPy" %}
+{% set version = "0.4.1" %}
+{% set sha256 = "67ac2e8f3ca67b016ee47faf4d0e19288f2b5a17d75073ad4e4b300c8020d418" %}
 
 package:
-  name: metpy
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: metpy-{{version}}.tar.gz
-  url: https://pypi.io/packages/source/M/MetPy/MetPy-{{version}}.tar.gz
-  sha256: f752ddd533e24e3de86f29c61c8d56035b6638e5a3d0c3c762378e147742ab20
+  fn: {{name}}-{{version}}.tar.gz
+  url: https://pypi.io/packages/source/{{name[0]}}/{{name}}/{{name}}-{{version}}.tar.gz
+  sha256: {{sha256}}
 
 build:
     script: python setup.py install --single-version-externally-managed --record record.txt
-    number: 1
+    number: 0
 
 requirements:
   build:
@@ -33,9 +35,24 @@ test:
     - metpy.io
 
 about:
-  home: https://github.com/metpy/MetPy
+  home: https://github.com/Unidata/MetPy
   license: BSD 3-Clause
+  license_family: BSD
+  license_file: LICENSE
   summary: 'MetPy is a collection of tools in Python for reading, visualizing and performing calculations with weather data.'
+  description: |
+    The space MetPy aims for is GEMPAK (and maybe NCL)-like functionality,
+    in a way that plugs easily into the existing scientific Python ecosystem
+    (numpy, scipy, matplotlib). So, if you take the average GEMPAK script for
+    a weather map, you need to: read data, calculate a derived field, and
+    show on a map/skew-T. One of the benefits hoped to achieve over GEMPAK
+    is to make it easier to use these routines for any meteorological Python
+    application; this means making it easy to pull out the LCL calculation
+    and just use that, or re-use the Skew-T with your own data code. MetPy
+    also prides itself on being well-documented and well-tested, so that
+    on-going maintenance is easily manageable.
+  doc_url: https://metpy.readthedocs.io
+  dev_url: https://github.com/Unidata/MetPy
 
 extra:
   recipe-maintainers:
