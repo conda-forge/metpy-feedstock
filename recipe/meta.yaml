@@ -1,6 +1,6 @@
 {% set name = "MetPy" %}
-{% set version = "0.4.1" %}
-{% set sha256 = "67ac2e8f3ca67b016ee47faf4d0e19288f2b5a17d75073ad4e4b300c8020d418" %}
+{% set version = "0.4.2" %}
+{% set sha256 = "2d3f3f8ab10bb19eb40253851bb697b6c4a6be8bf45e865001f48202e9dd953e" %}
 
 package:
   name: {{ name|lower }}
