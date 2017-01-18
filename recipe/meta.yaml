@@ -51,7 +51,7 @@ about:
     and just use that, or re-use the Skew-T with your own data code. MetPy
     also prides itself on being well-documented and well-tested, so that
     on-going maintenance is easily manageable.
-  doc_url: https://metpy.readthedocs.io
+  doc_url: https://unidata.github.io/MetPy
   dev_url: https://github.com/Unidata/MetPy
 
 extra:
