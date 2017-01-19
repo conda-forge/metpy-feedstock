@@ -1,6 +1,6 @@
 {% set name = "MetPy" %}
-{% set version = "0.4.2" %}
-{% set sha256 = "2d3f3f8ab10bb19eb40253851bb697b6c4a6be8bf45e865001f48202e9dd953e" %}
+{% set version = "0.4.3" %}
+{% set sha256 = "38b72787cdaecf3640a8e95913706ed59e2442407943512a419c4ba5c1d015be" %}
 
 package:
   name: {{ name|lower }}
@@ -51,7 +51,7 @@ about:
     and just use that, or re-use the Skew-T with your own data code. MetPy
     also prides itself on being well-documented and well-tested, so that
     on-going maintenance is easily manageable.
-  doc_url: https://metpy.readthedocs.io
+  doc_url: https://unidata.github.io/MetPy
   dev_url: https://github.com/Unidata/MetPy
 
 extra:
