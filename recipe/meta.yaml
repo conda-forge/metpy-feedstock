@@ -1,6 +1,6 @@
 {% set name = "MetPy" %}
-{% set version = "0.4.3" %}
-{% set sha256 = "38b72787cdaecf3640a8e95913706ed59e2442407943512a419c4ba5c1d015be" %}
+{% set version = "0.5.0" %}
+{% set sha256 = "3967bea9254f6fe268f7f74c2b506b8f730dab36017baafa0b6f3be02592984c" %}
 
 package:
   name: {{ name|lower }}
@@ -23,9 +23,10 @@ requirements:
   run:
     - python
     - numpy >=1.9.1
-    - scipy >=0.13.3
+    - scipy >=0.14.0
     - matplotlib >=1.4.0
     - pint >=0.7
+    - pyproj >=1.9.4
     - enum34  # [py27]
 
 test:
@@ -57,3 +58,4 @@ about:
 extra:
   recipe-maintainers:
     - dopplershift
+    - jrleeman
