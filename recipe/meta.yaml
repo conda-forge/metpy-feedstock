@@ -1,6 +1,6 @@
 {% set name = "MetPy" %}
-{% set version = "0.5.1" %}
-{% set sha256 = "bd02ee47e8fe0f9ff86dfc86eee81fd2064403e5275a3ac5cc882a583ee24100" %}
+{% set version = "0.6.0" %}
+{% set sha256 = "d414c351b47bd70dfc35768ed22e618f0d3d1a5798fb4d8e7f62101e8ad112f5" %}
 
 package:
   name: {{ name|lower }}
@@ -22,10 +22,10 @@ requirements:
 
   run:
     - python
-    - numpy >=1.9.1
+    - numpy >=1.10
     - scipy >=0.14.0
     - matplotlib >=1.4.0
-    - pint >=0.7
+    - pint >=0.8
     - pyproj >=1.9.4
     - enum34  # [py27]
 
@@ -34,6 +34,7 @@ test:
     - metpy.calc
     - metpy.plots
     - metpy.io
+    - metpy.gridding
 
 about:
   home: https://github.com/Unidata/MetPy
