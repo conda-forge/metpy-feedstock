@@ -1,13 +1,12 @@
 {% set name = "MetPy" %}
-{% set version = "0.6.1" %}
-{% set sha256 = "d34ba0bce65c7bc9f896e94e27ea88aae123a5ecabc2141ad6981a8d7bb53bf9" %}
+{% set version = "0.7.0" %}
+{% set sha256 = "1e3693e20b5e8c3e937024df6a83cc890a9bad222b14737fa67054b52b4cde19" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{name}}-{{version}}.tar.gz
   url: https://pypi.io/packages/source/{{name[0]}}/{{name}}/{{name}}-{{version}}.tar.gz
   sha256: {{sha256}}
 
