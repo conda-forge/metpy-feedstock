@@ -1,6 +1,6 @@
 {% set name = "MetPy" %}
-{% set version = "0.7.0" %}
-{% set sha256 = "1e3693e20b5e8c3e937024df6a83cc890a9bad222b14737fa67054b52b4cde19" %}
+{% set version = "0.8.0" %}
+{% set sha256 = "df5e694092a0c427b293885afc331b8780d33ddc2ab31d44749a1c160af6917d" %}
 
 package:
   name: {{ name|lower }}
@@ -26,6 +26,7 @@ requirements:
     - matplotlib >=1.4.0
     - pint >=0.8
     - pyproj >=1.9.4
+    - xarray >=0.9.6
     - enum34  # [py27]
 
 test:
