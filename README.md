@@ -24,14 +24,16 @@ on-going maintenance is easily manageable.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/metpy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/metpy-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/metpy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/metpy-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/metpy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/metpy-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/metpy-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/metpy-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/metpy-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/metpy-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/metpy-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/metpy-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/metpy/badges/version.svg)](https://anaconda.org/conda-forge/metpy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/metpy/badges/downloads.svg)](https://anaconda.org/conda-forge/metpy)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-metpy-green.svg)](https://anaconda.org/conda-forge/metpy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/metpy.svg)](https://anaconda.org/conda-forge/metpy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/metpy.svg)](https://anaconda.org/conda-forge/metpy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/metpy.svg)](https://anaconda.org/conda-forge/metpy) |
 
 Installing metpy
 ================
