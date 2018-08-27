@@ -1,6 +1,6 @@
 {% set name = "MetPy" %}
-{% set version = "0.8.0" %}
-{% set sha256 = "df5e694092a0c427b293885afc331b8780d33ddc2ab31d44749a1c160af6917d" %}
+{% set version = "0.9.0" %}
+{% set sha256 = "e530d829d01fe1d74b1baa33b9f7911048573cf2e693aeac38315727db8c9f5a" %}
 
 package:
   name: {{ name|lower }}
@@ -21,12 +21,13 @@ requirements:
 
   run:
     - python
-    - numpy >=1.10
+    - numpy >=1.11
     - scipy >=0.14.0
     - matplotlib >=1.4.0
     - pint >=0.8
+    - pooch =0.1
     - pyproj >=1.9.4
-    - xarray >=0.9.6
+    - xarray >=0.10.7
     - enum34  # [py27]
 
 test:
