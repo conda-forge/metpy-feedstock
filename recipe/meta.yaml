@@ -1,6 +1,6 @@
 {% set name = "MetPy" %}
-{% set version = "0.8.0" %}
-{% set sha256 = "df5e694092a0c427b293885afc331b8780d33ddc2ab31d44749a1c160af6917d" %}
+{% set version = "0.9.1" %}
+{% set sha256 = "2dadf750ddb752da13f4ece9b5784587c79c6c86f9a7be8d0cae3d236e403498" %}
 
 package:
   name: {{ name|lower }}
@@ -11,22 +11,24 @@ source:
   sha256: {{sha256}}
 
 build:
-    script: python setup.py install --single-version-externally-managed --record record.txt
+    script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
     number: 0
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
+    - pip
 
   run:
     - python
-    - numpy >=1.10
+    - numpy >=1.11
     - scipy >=0.14.0
     - matplotlib >=1.4.0
     - pint >=0.8
+    - pooch =0.1
     - pyproj >=1.9.4
-    - xarray >=0.9.6
+    - xarray >=0.10.7
     - enum34  # [py27]
 
 test:
