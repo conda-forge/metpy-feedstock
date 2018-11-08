@@ -12,7 +12,7 @@ source:
 
 build:
     script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
-    number: 0
+    number: 1000
 
 requirements:
   host:
