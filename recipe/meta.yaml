@@ -1,6 +1,6 @@
 {% set name = "MetPy" %}
-{% set version = "0.10.0" %}
-{% set sha256 = "71c46b6538d1544f0ed57a0cfe4456c16ab29fc2d21b6c2115d231bffc388ef3" %}
+{% set version = "0.10.2" %}
+{% set sha256 = "608b8705cbc935e6ac8a84eacdffbcd78999613d9890532018bc890210ed8788" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
     script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
-    number: 1001
+    number: 0
 
 requirements:
   host:
@@ -22,16 +22,17 @@ requirements:
 
   run:
     - python
-    - numpy >=1.11
-    - scipy >=0.14.0
-    - matplotlib >=1.4.0
+    - numpy >=1.12
+    - scipy >=0.17.0
+    - matplotlib >=2.0.0
     - pint >=0.8
-    - pooch >=0.1,<0.3
+    - pooch >=0.1
     - pyproj >=1.9.4
     - cartopy >=0.15.0
     - xarray >=0.10.7
     - traitlets >=4.3.0
     - enum34  # [py27]
+    - contextlib2  # [py27]
 
 test:
   imports:
