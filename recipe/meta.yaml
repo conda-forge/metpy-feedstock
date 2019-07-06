@@ -1,6 +1,6 @@
 {% set name = "MetPy" %}
-{% set version = "0.10.0" %}
-{% set sha256 = "71c46b6538d1544f0ed57a0cfe4456c16ab29fc2d21b6c2115d231bffc388ef3" %}
+{% set version = "0.10.1" %}
+{% set sha256 = "5235a8b81c22d30b3871f39e2251f4180ba6c447c858816793b8ed3fbd02dda0" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
     script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
-    number: 1001
+    number: 0
 
 requirements:
   host:
