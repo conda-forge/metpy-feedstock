@@ -37,9 +37,11 @@ requirements:
 test:
   imports:
     - metpy.calc
-    - metpy.plots
+    - metpy.plots  # [not linux]
     - metpy.io
     - metpy.gridding
+  commands:
+    - DISPLAY=localhost:1.0 xvfb-run -a bash -c 'python -c import metpy.plots'  # [linux]
 
 about:
   home: https://github.com/Unidata/MetPy
