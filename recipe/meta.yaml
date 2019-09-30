@@ -1,6 +1,6 @@
 {% set name = "MetPy" %}
-{% set version = "0.10.2" %}
-{% set sha256 = "608b8705cbc935e6ac8a84eacdffbcd78999613d9890532018bc890210ed8788" %}
+{% set version = "0.11.0" %}
+{% set sha256 = "864dc736671bbb6f53638ef67b237b04343cc007e56fccdd6f9dd90f7db2e724" %}
 
 package:
   name: {{ name|lower }}
@@ -19,17 +19,19 @@ requirements:
     - python
     - setuptools
     - pip
+    - setuptools_scm
 
   run:
     - python
     - numpy >=1.12
     - scipy >=0.17.0
-    - matplotlib >=2.0.0
+    - matplotlib >=2.1.0
     - pint >=0.8
     - pooch >=0.1
     - pyproj >=1.9.4
     - cartopy >=0.15.0
     - xarray >=0.10.7
+    - pandas >=0.22.0
     - traitlets >=4.3.0
     - enum34  # [py27]
     - contextlib2  # [py27]
