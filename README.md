@@ -208,5 +208,5 @@ Feedstock Maintainers
 =====================
 
 * [@dopplershift](https://github.com/dopplershift/)
-* [@jrleeman](https://github.com/jrleeman/)
+* [@zbruick](https://github.com/zbruick/)
 
