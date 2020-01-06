@@ -11,18 +11,19 @@ source:
   sha256: {{sha256}}
 
 build:
+    noarch: python
     script: "{{ PYTHON }} -m pip install . --no-deps -vv"
     number: 0
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - setuptools
     - pip
     - setuptools_scm
 
   run:
-    - python
+    - python >=3.6
     - matplotlib-base >=2.1.0
     - numpy >=1.13
     - scipy >=1.0
