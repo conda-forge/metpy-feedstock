@@ -38,9 +38,10 @@ requirements:
 test:
   imports:
     - metpy.calc
-    - metpy.plots
+    - metpy.interpolate
     - metpy.io
-    - metpy.gridding
+    - metpy.plots
+    - metpy.units
 
 about:
   home: https://github.com/Unidata/MetPy
