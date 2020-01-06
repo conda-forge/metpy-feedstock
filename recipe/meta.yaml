@@ -1,6 +1,6 @@
 {% set name = "MetPy" %}
-{% set version = "0.11.1" %}
-{% set sha256 = "807c49389905571736a6f61e6630dd5b1beead490c8e50e0bfaa1e76847bf7bf" %}
+{% set version = "0.12.0" %}
+{% set sha256 = "4125fbbc2620e3702961fe012cb52bdaba5f609ec5f5458818617676044b7921" %}
 
 package:
   name: {{ name|lower }}
@@ -11,37 +11,37 @@ source:
   sha256: {{sha256}}
 
 build:
+    noarch: python
     script: "{{ PYTHON }} -m pip install . --no-deps -vv"
     number: 0
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - setuptools
     - pip
     - setuptools_scm
 
   run:
-    - python
-    - numpy >=1.12
-    - scipy >=0.17.0
+    - python >=3.6
     - matplotlib-base >=2.1.0
+    - numpy >=1.13
+    - scipy >=1.0
     - pint >=0.8
+    - xarray >=0.10.7
     - pooch >=0.1
+    - traitlets >=4.3.0
+    - pandas >=0.22.0
     - pyproj >=1.9.4
     - cartopy >=0.15.0
-    - xarray >=0.10.7
-    - pandas >=0.22.0
-    - traitlets >=4.3.0
-    - enum34  # [py27]
-    - contextlib2  # [py27]
 
 test:
   imports:
     - metpy.calc
-    - metpy.plots
+    - metpy.interpolate
     - metpy.io
-    - metpy.gridding
+    - metpy.plots
+    - metpy.units
 
 about:
   home: https://github.com/Unidata/MetPy
@@ -66,4 +66,3 @@ about:
 extra:
   recipe-maintainers:
     - dopplershift
-    - zbruick
