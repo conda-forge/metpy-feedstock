@@ -1,6 +1,6 @@
 {% set name = "MetPy" %}
-{% set version = "0.12.0" %}
-{% set sha256 = "4125fbbc2620e3702961fe012cb52bdaba5f609ec5f5458818617676044b7921" %}
+{% set version = "1.0.0rc1" %}
+{% set sha256 = "46bbf435da179ff2e65d884dcba4dda265e2850e6df2697d58f13cfcb7e2ad1d" %}
 
 package:
   name: {{ name|lower }}
@@ -28,7 +28,7 @@ requirements:
     - numpy >=1.13
     - scipy >=1.0
     - pint >=0.8
-    - xarray >=0.10.7
+    - xarray >=0.12.3
     - pooch >=0.1
     - traitlets >=4.3.0
     - pandas >=0.22.0
