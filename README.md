@@ -127,5 +127,4 @@ Feedstock Maintainers
 =====================
 
 * [@dopplershift](https://github.com/dopplershift/)
-* [@zbruick](https://github.com/zbruick/)
 
