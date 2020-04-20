@@ -3,7 +3,7 @@ About metpy
 
 Home: https://github.com/Unidata/MetPy
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
@@ -126,6 +126,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@dcamron](https://github.com/dcamron/)
 * [@dopplershift](https://github.com/dopplershift/)
-* [@zbruick](https://github.com/zbruick/)
 
