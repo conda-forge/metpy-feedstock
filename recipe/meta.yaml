@@ -1,6 +1,5 @@
 {% set name = "MetPy" %}
-{% set version = "0.12.0" %}
-{% set sha256 = "4125fbbc2620e3702961fe012cb52bdaba5f609ec5f5458818617676044b7921" %}
+{% set version = "0.12.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{sha256}}
+  sha256: 2031007f12748c3aedad85694f71ffb3caf9933b72b5a330b59ea454285d0f50
 
 build:
     noarch: python
@@ -25,10 +24,10 @@ requirements:
   run:
     - python >=3.6
     - matplotlib-base >=2.1.0
-    - numpy >=1.13
+    - numpy >=1.16
     - scipy >=1.0
-    - pint >=0.8
-    - xarray >=0.10.7
+    - pint >=0.10.1
+    - xarray >=0.13.0
     - pooch >=0.1
     - traitlets >=4.3.0
     - pandas >=0.22.0
