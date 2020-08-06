@@ -1,5 +1,5 @@
 {% set name = "MetPy" %}
-{% set version = "0.12.1" %}
+{% set version = "0.12.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2031007f12748c3aedad85694f71ffb3caf9933b72b5a330b59ea454285d0f50
+  sha256: 54993d3a9b7f9986d64cc9783ad6947b1d95e3877bc99fa368c3bb1d6f381282
 
 build:
-    noarch: python
-    script: "{{ PYTHON }} -m pip install . --no-deps -vv"
-    number: 0
+  noarch: python
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 0
 
 requirements:
   host:
@@ -47,7 +47,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'MetPy is a collection of tools in Python for reading, visualizing and performing calculations with weather data.'
+  summary: MetPy is a collection of tools in Python for reading, visualizing and performing calculations with weather data.
   description: |
     The space MetPy aims for is GEMPAK (and maybe NCL)-like functionality,
     in a way that plugs easily into the existing scientific Python ecosystem
