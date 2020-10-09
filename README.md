@@ -5,9 +5,13 @@ Home: https://github.com/Unidata/MetPy
 
 Package license: BSD 3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/metpy-feedstock/blob/master/LICENSE.txt)
 
 Summary: MetPy is a collection of tools in Python for reading, visualizing and performing calculations with weather data.
+
+Development: https://github.com/Unidata/MetPy
+
+Documentation: https://unidata.github.io/MetPy
 
 The space MetPy aims for is GEMPAK (and maybe NCL)-like functionality,
 in a way that plugs easily into the existing scientific Python ecosystem
@@ -126,5 +130,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@dcamron](https://github.com/dcamron/)
 * [@dopplershift](https://github.com/dopplershift/)
 
