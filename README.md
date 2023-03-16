@@ -1,11 +1,11 @@
-About metpy
-===========
+About metpy-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/metpy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Unidata/MetPy
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/metpy-feedstock/blob/main/LICENSE.txt)
 
 Summary: MetPy is a collection of tools in Python for reading, visualizing and performing calculations with weather data.
 
