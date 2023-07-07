@@ -1,5 +1,5 @@
 {% set name = "MetPy" %}
-{% set version = "1.5.0" %}
+{% set version = "1.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1897b276097053aeda615e3e23bf497b7704e4536b1f8e2788bb02911646353d
+  sha256: abee94033642c06efecac3aabc224449124f14fdb01de12001f324da54ce46c7
 
 build:
   noarch: python
