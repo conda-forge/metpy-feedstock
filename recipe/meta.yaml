@@ -1,4 +1,4 @@
-{% set name = "MetPy" %}
+{% set name = "metpy" %}
 {% set version = "1.6.2" %}
 
 package:
