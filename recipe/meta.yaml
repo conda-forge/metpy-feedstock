@@ -1,5 +1,5 @@
-{% set name = "MetPy" %}
-{% set version = "1.6.2" %}
+{% set name = "metpy" %}
+{% set version = "1.6.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: eb065bac0d7818587fa38fa6c96dfe720d9d15b59af4e4866541894e267476bb
+  sha256: 23df14a9a67206fd1ffe6d5d3208587941d6abf9778c04dc7a3a1dc7a9a60766
 
 build:
   noarch: python
@@ -32,7 +32,7 @@ requirements:
     - scipy >=1.8.0
     - traitlets >=5.0.5
     - xarray >=0.21.0
-    - cartopy >=0.17.0
+    - cartopy >=0.21.0
 
 test:
   imports:
