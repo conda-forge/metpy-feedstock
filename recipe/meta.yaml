@@ -1,5 +1,5 @@
 {% set name = "metpy" %}
-{% set version = "1.6.3" %}
+{% set version = "1.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 23df14a9a67206fd1ffe6d5d3208587941d6abf9778c04dc7a3a1dc7a9a60766
+  sha256: aad7e03dc735cf8bfd870d16aca24920a707152de6caa24dbaf4da695c6f6ae4
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
