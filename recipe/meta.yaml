@@ -1,5 +1,6 @@
 {% set name = "metpy" %}
 {% set version = "1.7.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -24,14 +25,14 @@ requirements:
   run:
     - python >={{ python_min }}
     - matplotlib-base >=3.5.0
-    - numpy >=1.20
+    - numpy >=1.23
     - pandas >=1.4.0
     - pint >=0.17.0
     - pooch >=1.2.0
-    - pyproj >=3.0.0
+    - pyproj >=3.3.0
     - scipy >=1.8.0
-    - traitlets >=5.0.5
-    - xarray >=0.21.0
+    - traitlets >=5.1.0
+    - xarray >=2022.6.0
     - cartopy >=0.21.0
 
 test:
